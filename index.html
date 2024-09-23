@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="resume-builder">
+        <form id="resumeForm">
+            <div class="header">
+                <input type="text" id="firstName" placeholder="First Name" maxlength="15" required>
+                <input type="text" id="lastName" placeholder="Last Name" maxlength="15" required>
+                <input type="text" id="position" placeholder="Position (e.g., General Manager)" maxlength="30" required>
+            </div>
+            <hr>
+            <div class="content">
+                <div class="left">
+                    <h3>Contact</h3>
+                    <input type="text" id="phoneNumber" placeholder="Phone Number" maxlength="20" required>
+                    <input type="email" id="email" placeholder="Email Address" maxlength="50" required>
+                    <input type="url" id="linkedin" placeholder="LinkedIn URL" maxlength="100">
+                    <input type="text" id="location" placeholder="Location (City, State)" maxlength="30" required>
+                    <hr>
+                    <h3>Skills</h3>
+                    <div id="skills">
+                        <input type="text" id="skill1" placeholder="Skill 1" maxlength="20" required>
+                    </div>
+                    <button type="button" id="addSkillBtn">Add Skill</button>
+                    <hr>
+                    <h3>Education</h3>
+                    <input type="text" id="degree" placeholder="Degree" maxlength="30" required>
+                    <input type="text" id="institution" placeholder="Institution" maxlength="50" required>
+                    <input type="text" id="yearsAttended" placeholder="Years Attended" maxlength="20" required>
+                    <hr>
+                    <h3>Languages</h3>
+                    <div id="languages">
+                        <input type="text" id="language1" placeholder="Language 1" maxlength="20" required>
+                    </div>
+                    <button type="button" id="addLanguageBtn">Add Language</button>
+                    <hr>
+                    <h3>Technical Proficiency</h3>
+                    <div id="techSkills">
+                        <input type="text" id="techSkill1" placeholder="Technical Skill 1" maxlength="20" required>
+                    </div>
+                    <button type="button" id="addTechSkillBtn">Add Technical Skill</button>
+                </div>
+                <div class="right">
+                    <h3>Work Experience</h3>
+                    <div id="workExperience">
+                        <div class="work">
+                            <input type="text" id="jobTitle1" placeholder="Job Title" maxlength="30" required>
+                            <input type="text" id="company1" placeholder="Company Name" maxlength="50" required>
+                            <input type="text" id="dates1" placeholder="Dates of Employment" maxlength="30" required>
+                            <textarea id="achievements1" placeholder="Key Achievements" maxlength="300" required></textarea>
+                        </div>
+                    </div>
+                    <button type="button" id="addWorkBtn">Add Work Experience</button>
+                </div>
+            </div>
+            <hr>
+            <button class="generate-btn" type="submit">Generate Resume</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
